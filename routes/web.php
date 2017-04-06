@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Auth::routes();
@@ -25,5 +25,11 @@ Route::post('admin_password/reset', 'AdminAuth\ResetPasswordController@reset');
 Route::get('admin_password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
 
 
-Route::get('/home', 'HomeController@index');
 Route::get('/admin_home', 'AdminHomeController@index');
+/***** Front end ******/
+// Route::get('/home', 'HomeController@index');
+Route::get('/home', 'IndexController@index');
+Route::get('/services','ServicesController@index');
+Route::get('/contact', 'ContactController@index');
+
+Route::post('/contact', 'ContactController@sendEmailContact');
