@@ -59,7 +59,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                   <img src="dist/img/logo-nxt.png" style="width:171px;height:51px;" alt="Logo">
                 </a>
               </div>
